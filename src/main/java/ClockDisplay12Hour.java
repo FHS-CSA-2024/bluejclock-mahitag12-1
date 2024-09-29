@@ -8,8 +8,8 @@ public class ClockDisplay12Hour
     //Implement a private String for the display
     private String ap;
     private String display;
-    private NumberDisplay hours;
-    private NumberDisplay minutes;
+    private DisplayNum hours;
+    private DisplayNum minutes;
     
 
     //Implement a constructor that takes no parameters
@@ -17,8 +17,8 @@ public class ClockDisplay12Hour
     //The constructor should set minutes as a NumberDisplay object with 60 as the limit
     //The constructor should call the method updateDisplay before finishing
     public twelvehourdisplay(){
-        hours  = new NumberDisplay(12);
-        minutes = new NumberDisplay(60);
+        hours  = new DisplayNum(12);
+        minutes = new DisplayNum(60);
         ap = "AM";
         updateDisplay();
     }
@@ -28,8 +28,8 @@ public class ClockDisplay12Hour
     //The constructor should set minutes as a NumberDisplay object with 60 as the limit
     //The constructor should call the method setTime with the parameters passed in
     public twelvehourdisplay(int hour, int minute, boolean isAM ){
-         hours = new NumberDisplay(24);
-         minutes = new NumberDisplay(60);
+         hours = new DisplayNum(24);
+         minutes = new DisplayNum(60);
          if{
              ap = "AM";
         }
