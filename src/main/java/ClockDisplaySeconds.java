@@ -30,9 +30,9 @@ public class ClockDisplaySeconds
     //The constructor should set minutes as a NumberDisplay object with 60 as the limit
     //The constructor should call the method setTime with the parameters passed in
     public ClockDisplaySeconds(int hour, int minute, int second){
-         hours = new NumberDisplay(24);
-         minutes = new NumberDisplay(60);
-         seconds = new NumberDisplay(60);
+         hours = new DisplayNum(24);
+         minutes = new DisplayNum(60);
+         seconds = new DisplayNum(60);
          setTime(hour, minute, second);
     }
     
